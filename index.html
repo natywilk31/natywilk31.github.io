@@ -65,6 +65,19 @@
             margin-top: 2rem;
             font-size: 0.9rem;
         }
+
+        .resume-container {
+            width: 100%;
+            height: 600px; /* Adjust the height as needed */
+            overflow-y: scroll; /* Enables vertical scrolling */
+            border: 1px solid #ddd; /* Optional: for better visibility */
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
@@ -78,6 +91,7 @@
         <a href="#interests">Interests</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
+        <a href="#resume">Resume</a> <!-- Added Resume link -->
     </nav>
 
     <section id="about">
@@ -110,6 +124,14 @@
         <p>
             Check out my <a href="https://github.com/natywilk31" target="_blank">GitHub</a> or feel free to <a href="mailto:natalie1wilkins@gmail.com">email me</a>!
         </p>
+    </section>
+
+    <!-- Added Resume Section with Scrollable PDF Viewer -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="resume-container">
+            <iframe src="Natalie Wilkins Resume.pdf" title="Resume"></iframe>
+        </div>
     </section>
 
     <footer>
